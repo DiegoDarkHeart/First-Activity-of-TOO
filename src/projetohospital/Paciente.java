@@ -2,13 +2,14 @@
 package projetohospital;
 
 
-public class Paciente {
+public class Paciente extends Pessoa{
 
     //variables
     private Integer codPaciente;
     private String senhaPaciente;
 
     //abstract method
+    @Override
     public boolean logar(String senha) {
         boolean op;
         
@@ -32,6 +33,8 @@ public class Paciente {
     public String getSenhaPaciente(){
         return this.senhaPaciente;
     }
+    //in astah diagram says setSenha"Funcionario" 
+    //but its senha"Paciente" 1 more poits
     public void setSenhaPaciente(String senhaPaciente){
         this.senhaPaciente = senhaPaciente;
     }
