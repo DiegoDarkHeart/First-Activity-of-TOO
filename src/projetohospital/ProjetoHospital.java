@@ -38,14 +38,14 @@ public class ProjetoHospital {
         switch (oP) {
             case 1:
                 if (fernando.logar(JOptionPane.showInputDialog("insira a senha do paciente"))) {
-                    System.out.println("entrada autorizada!\nCodigo paciente.: " + fernando.getCodPaciente() + "\n" + fernando.getNome() + " " + fernando.getSobreNome() + "\n" + fernando.getRg() + "\n" + fernando.getCpf());
+                    System.out.println("entrada autorizada!\nCodigo paciente.: " + fernando.getCodPaciente() + "\nNome " + fernando.getNome() + " " + fernando.getSobreNome() + "\nRG " + fernando.getRg() + "\nCpf " + fernando.getCpf());
                 } else {
                     System.out.println("Erro Senha invalida!");
                 }
                 break;
             case 2: 
                 if (rogerio.logar(JOptionPane.showInputDialog("insira sua senha Enfermeiro.:"))){
-                    System.out.println("entrada autorizada!");
+                    System.out.println("entrada autorizada!\nCodigo Enfermeiro.: "+ rogerio.getCorem()+"\nRG "+);
                 }else{
                     System.out.println("Erro Senha invalida!");
                 }
